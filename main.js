@@ -65,14 +65,14 @@ scene.add(avatar)
 //Earth
 
 const earthTexture = new THREE.TextureLoader().load('earth_nightmap.jpg');
-const earthBumpTexture = new THREE.TextureLoader().load('bump.tif');
+//const earthBumpTexture = new THREE.TextureLoader().load('bump.tif');
 
 
 const earth = new THREE.Mesh(
     new THREE.SphereGeometry(3,32,32),
     new THREE.MeshBasicMaterial({
         map:earthTexture,
-        normalmap: earthBumpTexture,
+        //normalmap: earthBumpTexture,
     })
 );
 
@@ -88,13 +88,13 @@ avatar.position.x = 2;
 //Mars
 
 const marsTexture = new THREE.TextureLoader().load('mars.jpg');
-const marsBumpTexture = new THREE.TextureLoader().load('bump.jpg');
+//const marsBumpTexture = new THREE.TextureLoader().load('bump.jpg');
 
 const mars = new THREE.Mesh(
     new THREE.SphereGeometry(3,35,35),
     new THREE.MeshBasicMaterial({
         map: marsTexture,
-        normalmap: marsBumpTexture,
+       // normalmap: marsBumpTexture,
     })
 );
 
