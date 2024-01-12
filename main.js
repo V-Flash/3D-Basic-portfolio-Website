@@ -48,7 +48,7 @@ Array(200).fill().forEach(addStar);
 
 //Main Background 
 
-const spaceTexture = new THREE.TextureLoader().load('assets/space-ca17ac07.jpg');
+const spaceTexture = new THREE.TextureLoader().load('/assets/space.jpg');
 console.log("path:", 'space.jpg');
 scene.background = spaceTexture;
 
