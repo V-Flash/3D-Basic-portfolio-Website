@@ -48,12 +48,12 @@ Array(200).fill().forEach(addStar);
 
 //Main Background 
 
-const spaceTexture = new THREE.TextureLoader().load('space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('./space.jpg');
 scene.background = spaceTexture;
 
 
 //Avatar
-const avatarTexture = new THREE.TextureLoader().load('profile.jpg');
+const avatarTexture = new THREE.TextureLoader().load('./profile.jpg');
 
 const avatar = new THREE.Mesh(
     new THREE.BoxGeometry(3,3,3),
@@ -64,8 +64,8 @@ scene.add(avatar)
 
 //Earth
 
-const earthTexture = new THREE.TextureLoader().load('earth_nightmap.jpg');
-//const earthBumpTexture = new THREE.TextureLoader().load('bump.tif');
+const earthTexture = new THREE.TextureLoader().load('./earth_nightmap.jpg');
+//const earthBumpTexture = new THREE.TextureLoader().load('./bump.tif');
 
 
 const earth = new THREE.Mesh(
@@ -87,8 +87,8 @@ avatar.position.x = 2;
 
 //Mars
 
-const marsTexture = new THREE.TextureLoader().load('mars.jpg');
-//const marsBumpTexture = new THREE.TextureLoader().load('bump.jpg');
+const marsTexture = new THREE.TextureLoader().load('./mars.jpg');
+//const marsBumpTexture = new THREE.TextureLoader().load('./bump.jpg');
 
 const mars = new THREE.Mesh(
     new THREE.SphereGeometry(3,35,35),
